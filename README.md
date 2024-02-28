@@ -1,51 +1,52 @@
-#
+## Getting Started
 
-## Jak rozpocząć
+To begin working with this project, you'll need to clone it from GitHub and install all necessary packages.
 
-Aby zacząć pracę z projektem, musisz sklonować je z GitHub i zainstalować wszystkie niezbędne paczki.
+### Cloning the Repository
 
-### Klonowanie repozytorium
+```bash
+git clone https://github.com/adrianczesnowski/5faad7379315a035baab03e2d64f83c3.git
 
-git clone https://github.com/<twoja_nazwa_uzytkownika>/<nazwa_repozytorium>.git
+cd <repository_name>
+```
 
-cd <nazwa_repozytorium>
+### Installing Dependencies
 
-### Instalacja zależności
+To install the packages, run:
 
-Aby zainstalować paczki, uruchom:
-
+```bash
 npm install
+```
 
-### Uruchamianie projektu
+### Running the Project
 
+```bash
 npm run dev
+```
 
-Projekt będzie dostępny pod adresem [http://localhost:5173](http://localhost:5173).
+The project will be available at [http://localhost:5173](http://localhost:5173).
 
-### Uruchamianie testów
+### Running Tests
 
+```bash
 npm run test
+```
 
+## Project Structure
 
-## Struktura projektu
+- `src/components`: Directory for React components used throughout the project.
+- `src/context`: This is where the Context API logic used for state management is located.
 
-- `src/components`: Katalog dla komponentów React używanych w projekcie.
-- `src/context`: Tutaj znajduje się logika Context API używana do zarządzania stanem.
+### Files
 
-### Pliki
+- `ContextProvider.tsx`: Contains the Context API logic for state management.
+- `FetchPost.tsx`: A component for fetching and displaying posts.
+- `Post.tsx`: A post component.
+- `Button.tsx`, `Loader.tsx`: Simple UI components.
 
-- `ContextProvider.tsx`: Zawiera logikę Context API dla zarządzania stanem.
-- `FetchPost.tsx`: Komponent do pobierania i wyświetlania postów.
-- `Post.tsx`: Komponent postu.
-- `Button.tsx`, `Loader.tsx`: Proste komponenty UI.
+## What I Would Do Differently
 
-## Co bym zrobił inaczej
-
-- **Zmiana struktury**: Lepsze podzielenie projektu na katalogi `pages`, `components`, `views` itp., aby ułatwić nawigację i zarządzanie kodem.
-- **Stylowanie**: Zamiast zwykłych plików CSS, użyłbym SCSS Modules, styled-components lub Tailwind CSS dla lepszego zarządzania stylami i modularności.
-- **Zarządzanie stanem**: Zastąpienie Context API przez bardziej zaawansowane rozwiązanie takie jak Redux, aby lepiej zarządzać stanem w większych aplikacjach.
-- **Pobieranie danych**: Użycie biblioteki takiej jak React Query do obsługi operacji asynchronicznych i zarządzania stanem danych pobranych z API, co ułatwiłoby cache'owanie i synchronizację stanu.
-
-
-
-
+- **Structure Change**: Better division of the project into directories like `pages`, `components`, `views`, etc., to facilitate navigation and code management.
+- **Styling**: Instead of plain CSS files, I would use SCSS Modules, styled-components, or Tailwind CSS for better style management and modularity.
+- **State Management**: Replace Context API with a more advanced solution such as Redux to better manage state in larger applications.
+- **Data Fetching**: Use a library like React Query for handling asynchronous operations and managing the state of data fetched from APIs, which would simplify caching and state synchronization.
