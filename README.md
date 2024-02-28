@@ -37,7 +37,7 @@ npm run test
 - `src/components`: Directory for React components used throughout the project.
 - `src/context`: This is where the Context API logic used for state management is located.
 
-### Files
+### Some Files
 
 - `ContextProvider.tsx`: Contains the Context API logic for state management.
 - `FetchPost.tsx`: A component for fetching and displaying posts.
@@ -48,5 +48,6 @@ npm run test
 
 - **Structure Change**: Better division of the project into directories like `pages`, `components`, `views`, etc., to facilitate navigation and code management.
 - **Styling**: Instead of plain CSS files, I would use SCSS Modules, styled-components, or Tailwind CSS for better style management and modularity.
-- **State Management**: Replace Context API with a more advanced solution such as Redux to better manage state in larger applications.
+- **State Management**: Replace Context API with a more advanced solution such as Redux to better manage state.
 - **Data Fetching**: Use a library like React Query for handling asynchronous operations and managing the state of data fetched from APIs, which would simplify caching and state synchronization.
+- **Types**: I would not use React.FC. I would improve types and interfaces. 
