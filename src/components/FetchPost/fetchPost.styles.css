@@ -1,0 +1,10 @@
+.post-view__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
